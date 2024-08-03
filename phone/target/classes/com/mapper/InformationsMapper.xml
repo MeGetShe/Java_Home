@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mappere 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.InformationsMapper">
+    <select id="queryAll" resultType="informations">
+        SELECT id,title,replyCount,viewCount,reportTime,lastPostTime
+        FROM `informations`
+    </select>
+
+
+    <resultMap id="queryDetail" type="informations">
+        <id property="id" column="id"></id>
+        <collection property="repliesList" ofType="com.pojo.Replies">
+            <result property="content" column="r_content"></result>
+            <result property="replyTime" column="replyTime"></result>
+            <result property="infold" column="infold"></result>
+        </collection>
+    </resultMap>
+
+    <select id="queryDetailById" resultMap="queryDetail">
+        SELECT i.*,r.`content` r_content,r.`replyTime`,r.infold
+        FROM `informations` i LEFT JOIN `replies` r
+                                        ON i.`id`=r.`infold`
+        WHERE i.`id`=#{id};
+    </select>
+</mapper>

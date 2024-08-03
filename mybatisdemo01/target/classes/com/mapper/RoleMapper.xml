@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mappere 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.RoleMapper">
+
+    <insert id="saveRole" parameterType="role" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `smbms_role`(rolecode,roleName,createdBy,creationDate,modifyBy,modifyDate)
+        VALUES(#{roleCode},#{roleName},#{createdBy},now(),#{modifyBy},now())
+    </insert>
+
+    <update id="updateById" parameterType="role">
+        UPDATE `smbms_role`
+        SET roleCode=#{roleCode},roleName=#{roleName}
+        WHERE id=#{id};
+    </update>
+
+    <delete id="deleteById">
+        DELETE FROM `smbms_role`
+        WHERE id=#{id};
+    </delete>
+
+    <select id="queryByRoleName" resultType="com.pojo.Role">
+        SELECT *
+        FROM `smbms_role`
+        WHERE roleName LIKE CONCAT('%',#{roleName},'%');
+    </select>
+
+    <resultMap id="queryRoleAndUser" type="role">
+        <id property="id" column="id"></id>
+        <result property="roleCode" column="roleCode"></result>
+        <result property="roleName" column="roleName"></result>
+        <result property="createdBy" column="createdBy"></result>
+        <result property="creationDate" column="creationDate"></result>
+        <result property="modifyBy" column="modifyBy"></result>
+        <result property="modifyDate" column="modifyDate"></result>
+        <collection property="userList" ofType="user">
+            <id property="id" column="u_id"></id>
+            <result property="userName" column="userName"></result>
+        </collection>
+    </resultMap>
+
+    <select id="queryRoleAndUserByRoleName" resultMap="queryRoleAndUser">
+        SELECT r.*,u.`userName`,u.id u_id
+        FROM `smbms_role` r LEFT JOIN `smbms_user` u
+                                      ON r.`id`=u.`userRole`
+        WHERE r.roleName LIKE CONCAT('%',#{roleName},'%');
+    </select>
+</mapper>
