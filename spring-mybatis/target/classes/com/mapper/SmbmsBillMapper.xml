@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.SmbmsBillMapper">
+
+    <resultMap id="SmbmsBillMap" type="SmbmsBill">
+        <id property="id" column="b_id"></id>
+        <result property="billcode" column="billCode"></result>
+        <result property="productname" column="productName"></result>
+        <result property="totalprice" column="totalPrice"></result>
+        <association property="smbmsProvider" javaType="com.pojo.SmbmsProvider">
+            <id property="id" column="p_id"></id>
+            <result property="proname" column="proName"></result>
+        </association>
+    </resultMap>
+
+    <select id="queryBillByCodeAndName" resultMap="SmbmsBillMap" parameterType="SmbmsBill">
+        SELECT b.id b_id,b.`billCode`,b.`productName`,b.`totalPrice`,p.`id` p_id,p.`proName`
+        FROM smbms.smbms_bill b,smbms.smbms_provider p
+        WHERE b.`providerId`=p.`id`
+            <if test="billcode!=null and billcode!=''">
+                AND b.`billCode`=#{billcode}
+            </if>
+          <if test="productname!=null and productname!=''">
+              AND b.`productName` LIKE CONCAT('%',#{productname},'%')
+          </if>
+
+    </select>
+</mapper>
+
