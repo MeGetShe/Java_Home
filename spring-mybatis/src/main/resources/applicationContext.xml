@@ -20,6 +20,7 @@
     </bean>
     <!--sqlSessionFactoryBean-->
     <bean name="sqlSessionFactoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
         <property name="typeAliasesPackage" value="com.pojo"></property>
         <!--mapper映射文件所在路径-->
         <property name="mapperLocations" value="classpath:com/mapper/*.xml"></property>
