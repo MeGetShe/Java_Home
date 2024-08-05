@@ -15,8 +15,8 @@ public class TestUser {
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         UserService userService = context.getBean("userService", UserService.class);
         User user = new User();
-        user.setCardId("133655199910190934");
-        user.setName("王刚");
+        user.setCardId("132655199910190934");
+        user.setName("陈刚");
         user.setGender(0);
         user.setCreateTime(new Date());
         user.setPassword("123456");
