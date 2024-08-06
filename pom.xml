@@ -9,12 +9,12 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>mybatisdemo01</module>
-        <module>developerForum</module>
-        <module>phone</module>
-        <module>springdemo01</module>
+<!--        <module>mybatisdemo01</module>-->
+<!--        <module>developerForum</module>-->
+<!--        <module>phone</module>-->
+<!--        <module>springdemo01</module>-->
         <module>spring-mybatis</module>
-        <module>HousingManagementSystem</module>
+<!--        <module>HousingManagementSystem</module>-->
     </modules>
 
 
