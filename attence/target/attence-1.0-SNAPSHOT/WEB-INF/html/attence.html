@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <tr>
+            <th colspan="4">考勤记录信息表</th>
+        </tr>
+        <tr>
+            <th>员工姓名</th>
+            <th>所属部门</th>
+            <th>考勤日期</th>
+            <th>考勤状态</th>
+        </tr>
+        <tr th:each="attence : ${attenceList}">
+            <td th:text="${attence.empName}"></td>
+            <td th:text="${attence.dept}"></td>
+            <td th:text="${attence.chkDate}"></td>
+            <td th:text="${attence.status}"></td>
+        </tr>
+    </table>
+    <a href="addAttence">登记考勤</a>
+</div>
+</body>
+</html>

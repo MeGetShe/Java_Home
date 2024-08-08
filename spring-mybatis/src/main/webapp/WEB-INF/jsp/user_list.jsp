@@ -14,14 +14,13 @@
 </head>
 <body>
   <h2>用户信息列表</h2>
-  <div>
+<%--  <div>--%>
 <%--    <c:forEach items="userList" var="user">--%>
-      <p>
-        ${userList[1].username}
+<%--      <p>--%>
 <%--          ${user.username}--%>
-      </p>
+<%--      </p>--%>
 <%--    </c:forEach>--%>
-  </div>
+<%--  </div>--%>
 
 </body>
 </html>

@@ -16,5 +16,12 @@ public interface SmbmsUserMapper {
 
     List<SmbmsUser> queryAll();
 
+    /**
+     * 通过用户名密码查找
+     * @param smbmsUser
+     * @return
+     */
+    SmbmsUser login(SmbmsUser smbmsUser);
+
 }
 

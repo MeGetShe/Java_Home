@@ -14,7 +14,8 @@
 <!--        <module>phone</module>-->
 <!--        <module>springdemo01</module>-->
         <module>spring-mybatis</module>
-<!--        <module>HousingManagementSystem</module>-->
+        <module>attence</module>
+        <!--        <module>HousingManagementSystem</module>-->
     </modules>
 
 

@@ -21,5 +21,11 @@
     <select id="queryAll" resultMap="SmbmsUserMap">
         select * from smbms.smbms_user
     </select>
+
+    <select id="login" resultMap="SmbmsUserMap" parameterType="SmbmsUser">
+        select * from smbms.smbms_user
+        where userName=#{username}
+        and userPassword=#{userpassword}
+    </select>
 </mapper>
 

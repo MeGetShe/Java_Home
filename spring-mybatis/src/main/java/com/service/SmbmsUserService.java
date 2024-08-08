@@ -14,5 +14,8 @@ import java.util.List;
 public interface SmbmsUserService {
 
    List<SmbmsUser> queryAll();
+   
+   
+   SmbmsUser login(SmbmsUser smbmsUser);
 
 }

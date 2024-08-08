@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h2>错${exception.message}</h2>
+<h2>错   404  </h2>
 </body>
 </html>

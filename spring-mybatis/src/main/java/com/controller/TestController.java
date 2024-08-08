@@ -12,12 +12,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class TestController {
 
     @ResponseBody
-    @GetMapping("/getJson")
+    @GetMapping(value = "/getJson",produces ={"application/json;charset=utf-8"})
     public String getJson(){
         SmbmsUser smbmsUser=new SmbmsUser();
         smbmsUser.setId(1L);
         smbmsUser.setUsername("xiaoke");
         String jsonString = JSON.toJSONString(smbmsUser);
         return jsonString;
+    }
+
+    @RequestMapping("/toLogin")
+    public String toLogin(){
+        return "login";
     }
 }

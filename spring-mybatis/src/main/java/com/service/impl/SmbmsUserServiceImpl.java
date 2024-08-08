@@ -25,4 +25,9 @@ public class SmbmsUserServiceImpl implements SmbmsUserService {
     public List<SmbmsUser> queryAll() {
         return smbmsUserMapper.queryAll();
     }
+
+    @Override
+    public SmbmsUser login(SmbmsUser smbmsUser) {
+        return smbmsUserMapper.login(smbmsUser);
+    }
 }
