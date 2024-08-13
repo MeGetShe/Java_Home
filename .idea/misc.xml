@@ -3,7 +3,9 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/attence" />
+    <file type="web" url="file://$PROJECT_DIR$/billmanage" />
     <file type="web" url="file://$PROJECT_DIR$/mybatisdemo01" />
+    <file type="web" url="file://$PROJECT_DIR$/pet" />
     <file type="web" url="file://$PROJECT_DIR$/spring-mybatis" />
   </component>
   <component name="MavenProjectsManager">

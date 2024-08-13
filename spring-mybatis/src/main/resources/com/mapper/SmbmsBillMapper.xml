@@ -23,7 +23,7 @@
           <if test="productname!=null and productname!=''">
               AND b.`productName` LIKE CONCAT('%',#{productname},'%')
           </if>
-
     </select>
+
 </mapper>
 

@@ -177,6 +177,144 @@
             </TableInfoDTO>
           </value>
         </entry>
+        <entry key="pet.pet">
+          <value>
+            <TableInfoDTO>
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="petid" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="petname" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="petbreed" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="petsex" />
+                    <option name="type" value="java.lang.Integer" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="birthday" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="descroption" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="Pet" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="pet" />
+              <option name="savePackageName" value="com" />
+              <option name="savePath" value="./pet/src/main/java/com" />
+              <option name="templateGroupName" value="myTemplate" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="smbms.smbms_address">
+          <value>
+            <TableInfoDTO>
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="主键ID" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="联系人姓名" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="contact" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="收货地址明细" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="addressdesc" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="邮编" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="postcode" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="联系人电话" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="tel" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建者" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="createdby" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="creationdate" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改者" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="modifyby" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="modifydate" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="用户ID" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="userid" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="SmbmsAddress" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="billmanage" />
+              <option name="savePackageName" value="com" />
+              <option name="savePath" value="./billmanage/src/main/java/com" />
+              <option name="templateGroupName" value="myTemplate" />
+            </TableInfoDTO>
+          </value>
+        </entry>
         <entry key="smbms.smbms_bill">
           <value>
             <TableInfoDTO>
@@ -277,10 +415,10 @@
               </option>
               <option name="name" value="SmbmsBill" />
               <option name="preName" value="" />
-              <option name="saveModelName" value="spring-mybatis" />
+              <option name="saveModelName" value="billmanage" />
               <option name="savePackageName" value="com" />
-              <option name="savePath" value="./spring-mybatis/src/main/java/com" />
-              <option name="templateGroupName" value="" />
+              <option name="savePath" value="./billmanage/src/main/java/com" />
+              <option name="templateGroupName" value="myTemplate" />
             </TableInfoDTO>
           </value>
         </entry>
@@ -377,9 +515,74 @@
               </option>
               <option name="name" value="SmbmsProvider" />
               <option name="preName" value="" />
-              <option name="saveModelName" value="spring-mybatis" />
+              <option name="saveModelName" value="billmanage" />
               <option name="savePackageName" value="com" />
-              <option name="savePath" value="./spring-mybatis/src/main/java/com" />
+              <option name="savePath" value="./billmanage/src/main/java/com" />
+              <option name="templateGroupName" value="myTemplate" />
+            </TableInfoDTO>
+          </value>
+        </entry>
+        <entry key="smbms.smbms_role">
+          <value>
+            <TableInfoDTO>
+              <option name="fullColumn">
+                <list>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="主键ID" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="id" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="角色编码" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="rolecode" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="角色名称" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="rolename" />
+                    <option name="type" value="java.lang.String" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建者" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="createdby" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="创建时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="creationdate" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改者" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="modifyby" />
+                    <option name="type" value="java.lang.Long" />
+                  </ColumnInfoDTO>
+                  <ColumnInfoDTO>
+                    <option name="comment" value="修改时间" />
+                    <option name="custom" value="false" />
+                    <option name="ext" value="{}" />
+                    <option name="name" value="modifydate" />
+                    <option name="type" value="java.util.Date" />
+                  </ColumnInfoDTO>
+                </list>
+              </option>
+              <option name="name" value="SmbmsRole" />
+              <option name="preName" value="" />
+              <option name="saveModelName" value="billmanage" />
+              <option name="savePackageName" value="com" />
+              <option name="savePath" value="./billmanage/src/main/java/com" />
               <option name="templateGroupName" value="myTemplate" />
             </TableInfoDTO>
           </value>
@@ -484,9 +687,9 @@
               </option>
               <option name="name" value="SmbmsUser" />
               <option name="preName" value="" />
-              <option name="saveModelName" value="spring-mybatis" />
+              <option name="saveModelName" value="billmanage" />
               <option name="savePackageName" value="com" />
-              <option name="savePath" value="./spring-mybatis/src/main/java/com" />
+              <option name="savePath" value="./billmanage/src/main/java/com" />
               <option name="templateGroupName" value="myTemplate" />
             </TableInfoDTO>
           </value>
